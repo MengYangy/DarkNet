@@ -1,2 +1,2 @@
 # DarkNet
-darknet52,tf2
+darknet53,tf2
