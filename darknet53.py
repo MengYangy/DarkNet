@@ -15,7 +15,7 @@ def darknetConv2d_BN_Leakr(x, f_size, k_size, strides=1):
 
 def res_unit(x, f_size, k_size):
     x1 = x
-    x = darknetConv2d_BN_Leakr(x, f_size, k_size)
+    x = darknetConv2d_BN_Leakr(x, f_size // 2, k_size)
     x = darknetConv2d_BN_Leakr(x, f_size, k_size)
     return Add()([x, x1])
 
